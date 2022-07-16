@@ -8,7 +8,7 @@ const Request = () => {
     const [loading, setLoading] = useState(true)
     useEffect(() => {
         const getAllRequest = async () => {
-            const { data } = await axios.get('http://localhost:5000/request')
+            const { data } = await axios.get('https://rocky-fortress-35154.herokuapp.com/request')
             setRequest(data)
             setLoading(false)
         }
@@ -18,7 +18,7 @@ const Request = () => {
         e.preventDefault()
         setLoading(true)
         setRequest([])
-        const { data } = await axios.get(`http://localhost:5000/request?blood=${e.target.blood.value}&area=${e.target.area.value}`)
+        const { data } = await axios.get(`https://rocky-fortress-35154.herokuapp.com/request?blood=${e.target.blood.value}&area=${e.target.area.value}`)
         console.log(data);
         setRequest(data)
         e.target.reset()

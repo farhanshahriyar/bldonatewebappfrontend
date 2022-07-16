@@ -63,7 +63,7 @@ const SignUp = () => {
             const saveUserToDB = async () => {
                 const { data } = await axios({
                     method: 'POST',
-                    url: 'http://localhost:5000/users',
+                    url: 'https://rocky-fortress-35154.herokuapp.com/users',
                     data: {
                         email: user.user.email,
                         userName: userName,

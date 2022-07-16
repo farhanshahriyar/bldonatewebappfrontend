@@ -132,6 +132,7 @@
 }
 .hover:hover .dropdown {
   display: flex;
+  justify-content: space-between;
 }
 .dropdown {
   color: gray;

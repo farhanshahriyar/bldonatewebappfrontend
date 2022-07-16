@@ -8,7 +8,7 @@ import toast from 'react-hot-toast';
 const About = () => {
     const handleContact = async (e) => {
         e.preventDefault();
-        const { data } = await axios.post('http://localhost:5000/add-message', {
+        const { data } = await axios.post('https://rocky-fortress-35154.herokuapp.com/add-message', {
             email: e.target.email.value,
             phone: e.target.phone.value,
             date: new Date().getTime(),

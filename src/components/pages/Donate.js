@@ -10,7 +10,7 @@ const Donate = () => {
     const handleDonate = async (e) => {
         e.preventDefault()
         setLoading(true)
-        const { data } = await axios.post('http://localhost:5000/donate', {
+        const { data } = await axios.post('https://rocky-fortress-35154.herokuapp.com/donate', {
             name: e.target.name.value,
             gender: e.target.gender.value,
             email: e.target.email.value,
