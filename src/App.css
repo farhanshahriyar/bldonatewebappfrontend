@@ -1,11 +1,21 @@
 /* banner/header */
+.banner-next {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../src/assets/patient.jpeg);
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
+  width: 100%;
+  margin: 0 auto;
+}
 .banner {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url('https://media.istockphoto.com/photos/blood-donation-concept-picture-id1220217893?k=20&m=1220217893&s=612x612&w=0&h=K6Tayrc1JCEmhGkfaBnEL_e3yOjGzbTFsmowslXwoHM=');
   height: 100vh;
   background-position: center;
   background-size: cover;
-  opacity: 0.75;
+  opacity: 0.9;
 }
 /* login */
 .login-container {
@@ -113,4 +123,26 @@
   #wrapper.toggled #sidebar-wrapper {
     margin-left: -15rem;
   }
+}
+.hover {
+  border-bottom: 2px solid transparent;
+}
+.hover:hover {
+  border-bottom: 2px solid white;
+}
+.hover:hover .dropdown {
+  display: flex;
+}
+.dropdown {
+  color: gray;
+  z-index: 100;
+  gap: 20px;
+  padding: 20px;
+  display: none;
+  top: 43.5px;
+  width: calc(100vw - 40px);
+  right: 0;
+}
+.dropdown div p:hover {
+  color: black;
 }

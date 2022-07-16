@@ -1,13 +1,43 @@
 import React from 'react';
+import patient from '../../assets/patient.jpeg'
 
 const Banner = () => {
-    return (
-        <div className='banner d-flex justify-content-center align-items-center' style={{ marginBottom: '100px' }}>
-            <div className="text-white text-center">
-                <h1>Donate bloods to save life</h1>
-                <p>Bldonor is a real-time free platform to help blood searchers connect voluntary blood donors around Bangladesh.</p>
+    return (<>
+        <div id="carouselExampleDark" className="carousel carousel-dark slide mb-0" style={{ height: '550px' }} data-bs-ride="carousel">
+            <div className="carousel-inner mb-0">
+                <div className="carousel-item active mb-0" data-bs-interval="3500">
+                    <img src='https://media.istockphoto.com/photos/blood-donation-concept-picture-id1220217893?k=20&m=1220217893&s=612x612&w=0&h=K6Tayrc1JCEmhGkfaBnEL_e3yOjGzbTFsmowslXwoHM=' className="d-block w-100" alt="..." height="500px" />
+                    <div className="carousel-caption d-none d-md-block me-auto w-50 position-relative" style={{ bottom: '296px', left: '40px' }}>
+                        <h1 className="text-start text-white">Donate bloods to save life</h1>
+                        <p className="text-start text-white">Bldonor is a real-time free platform to help blood searchers connect voluntary blood donors around Bangladesh.</p>
+                        <div className="d-flex justify-content-start">
+                            <button className="btn btn-danger">Donate Now !</button>
+                        </div>
+                    </div>
+                </div>
+                <div className="carousel-item" data-bs-interval="3500">
+                    <img src={patient} className="d-block w-100" alt="..." height="500px" />
+                    <div className="carousel-caption d-none d-md-block me-auto w-50 position-relative" style={{ bottom: '296px', left: '40px' }}>
+                        <h1 className="text-start text-white">Donate bloods to save life</h1>
+                        <p className="text-start text-white">Bldonor is a real-time free platform to help blood searchers connect voluntary blood donors around Bangladesh.</p>
+                        <div className="d-flex justify-content-start">
+                            <button className="btn btn-danger">Donate Now !</button>
+                        </div>
+                    </div>
+                </div>
+                <div className="carousel-item" data-bs-interval="3500">
+                    <img src='https://media.istockphoto.com/photos/blood-donation-concept-picture-id1220217893?k=20&m=1220217893&s=612x612&w=0&h=K6Tayrc1JCEmhGkfaBnEL_e3yOjGzbTFsmowslXwoHM=' className="d-block w-100" alt="..." height="500px" />
+                    <div className="carousel-caption d-none d-md-block me-auto w-50 position-relative" style={{ bottom: '296px', left: '40px' }}>
+                        <h1 className="text-start text-white">Donate bloods to save life</h1>
+                        <p className="text-start text-white">Bldonor is a real-time free platform to help blood searchers connect voluntary blood donors around Bangladesh.</p>
+                        <div className="d-flex justify-content-start">
+                            <button className="btn btn-danger">Donate Now !</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div >
+        </div>
+    </>
     );
 };
 
